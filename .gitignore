@@ -1,0 +1,23 @@
+*.class
+**/*.icloud
+# Package Files #
+*.war
+*.ear
+*.settings
+*.DS_Store
+.classpath
+.project
+bin
+logs
+.idea
+target/
+build/
+deploy/
+/binclasses
+.metadata/
+.recommenders/
+dump.rdb
+*.iml
+*/.gitignore
+*/test-output/
+*.tkn
