@@ -23,7 +23,7 @@
 	<modules>
 		<module>greeting-common</module>
 		<module>greeting-service</module>
-		<module>greeting-client</module>
+		<module>greeting-clientV2</module>
 	</modules>
 
 	<build>
