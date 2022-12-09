@@ -19,12 +19,12 @@ public class GreetingServiceImpl extends ReactorGreetingServiceGrpc.GreetingServ
 
     private static final Logger log = LoggerFactory.getLogger(GreetingServiceImpl.class);
 
-    @Autowired
-    private ArsenalClientService arsenalClientService;
+//    @Autowired
+//    private ArsenalClientService arsenalClientService;
 
     @Override
     public Mono<GreetingResponse> greeting(Mono<GreetingRequest> request) {
-        log.info("play health check: {}", arsenalClientService.getArsenalResponse().block());
+//        log.info("play health check: {}", arsenalClientService.getArsenalResponse().block());
         return request.map(GreetingRequest::getMessage)
                 .map(msg -> GreetingResponse.newBuilder().setMessage(msg).build());
     }
